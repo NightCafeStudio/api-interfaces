@@ -21,7 +21,7 @@ var global = (function() {
   return Function('return this')();
 }.call(null));
 
-var generation_pb = require('./generation_pb.js');
+var generation_pb = require('../generation/generation_pb.js');
 goog.object.extend(proto, generation_pb);
 goog.exportSymbol('proto.gooseai.CreateProjectRequest', null, global);
 goog.exportSymbol('proto.gooseai.DeleteAssetsRequest', null, global);
